@@ -1,3 +1,4 @@
-papel de cocina
-javon liquido lavarropas
-bolsas para basura
+Hacer compras en super:
+	-Papel de cocina
+	-Jabón liquido lavarropas
+	-Bolsas para basura
