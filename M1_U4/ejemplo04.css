@@ -1,0 +1,25 @@
+h1{
+    background-color: yellow;
+    color: green;
+    text-align: center;
+}
+
+p{
+    color: blue;
+    font-weight: 100;
+    font-style: italic;
+}
+.destacados{
+    color: red;
+    font-size: 22px;
+}
+#caja{
+    background-color: orange;
+    width: 300px;
+    height: 350px;
+    padding: 32px;
+    /* border: 20px solid black; */
+    box-sizing: border-box;
+    border-right: 5px dashed red;
+    margin-left: 100px;
+}
