@@ -1,9 +1,30 @@
-#izquierda{
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+#izquierda {
     background-color: lightblue;
     font-family: 'Times New Roman';
 }
 
-#derecha{
+#derecha {
     background-color: lightgreen;
     font-family: 'Times New Roman';
+}
+
+.foto {
+    border-radius: 50%;
+    border: 3px solid rgb(85, 70, 70);
 }
