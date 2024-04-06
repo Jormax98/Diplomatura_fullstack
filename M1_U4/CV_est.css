@@ -1,9 +1,14 @@
+p{
+    padding: 1px;
+    margin: 1px;
+}
 h1 {
     text-transform: uppercase;
 }
 
 h2 {
     text-transform: uppercase;
+    border-bottom: 2px solid lightseagreen;
 }
 
 h3 {
@@ -14,17 +19,32 @@ h4 {
     text-transform: uppercase;
 }
 
+.tabla {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+
 #izquierda {
-    background-color: lightblue;
+    background-color: lightgray;
     font-family: 'Times New Roman';
 }
 
 #derecha {
-    background-color: lightgreen;
     font-family: 'Times New Roman';
+    margin-left: 1%;
 }
 
-.foto {
+#foto {
+    margin-left: 30%;
     border-radius: 50%;
     border: 3px solid rgb(85, 70, 70);
+}
+
+.imagenes {
+    margin-right: 5%; 
+    margin-left: 5%;
+}
+
+.textoimag {
+    text-align: center;
 }
