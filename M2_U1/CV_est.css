@@ -1,7 +1,8 @@
-p{
+p {
     padding: 1px;
     margin: 1px;
 }
+
 h1 {
     text-transform: uppercase;
 }
@@ -25,13 +26,16 @@ h4 {
 }
 
 #izquierda {
-    background-color: lightgray;
+    box-shadow: 10px -10px 20px #888;
+    background: rgb(162,162,160);
+    background: linear-gradient(90deg, rgba(162,162,160,0.7343312324929971) 0%, rgba(237,234,234,1) 100%, rgba(255,255,255,1) 100%);
     font-family: 'Times New Roman';
+    border-radius: 50px 50px 10px 10px;
 }
 
 #derecha {
     font-family: 'Times New Roman';
-    margin-left: 1%;
+    margin-left: 4%;    
 }
 
 #foto {
@@ -42,7 +46,7 @@ h4 {
 }
 
 .imagenes {
-    margin-right: 5%; 
+    margin-right: 5%;
     margin-left: 5%;
 }
 
