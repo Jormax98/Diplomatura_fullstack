@@ -1,0 +1,31 @@
+.padre{
+    text-align: right;
+    background-color: lightblue;
+}
+
+.contenedor {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+#caja1 {
+    background-color: red;
+}
+
+#caja2 {
+    background-color: blue;
+}
+
+#caja3 {
+    background-color: green;
+}
+
+#caja1,#caja2,#caja3 {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 50px;
+}
