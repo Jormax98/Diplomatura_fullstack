@@ -52,6 +52,7 @@ aside {
 	#contenedor {
 		background-color: lightgreen;
 		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	h1 {
