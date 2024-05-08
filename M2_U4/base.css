@@ -34,7 +34,7 @@ p {
     /*No puedo acomoda el tamaño del fondo*/
 }
 
-.PrimerParrafo {
+#PrimerParrafo {
     padding-top: 2%;
     text-align: center;
 }
@@ -43,4 +43,8 @@ p {
 #PrimerParrafo {
     text-align: justify;
     width: 1000px;
+}
+
+#Vease{
+    text-align: center;
 }
