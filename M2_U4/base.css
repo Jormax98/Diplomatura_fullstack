@@ -1,0 +1,46 @@
+/* .Carruselnorm{
+    width: auto;
+    height: 50px;
+    max-height: 50px;
+    text-align: center;
+} */
+body {
+    background-color: rgb(242, 244, 247);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: justify;
+}
+
+.Carruselimag {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.Cardimag {
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.Slider {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: white;
+    background-size: 50px;
+    /*No puedo acomoda el tamaño del fondo*/
+}
+
+.PrimerParrafo {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.Parrafo,
+#PrimerParrafo {
+    text-align: justify;
+    width: 1000px;
+}
