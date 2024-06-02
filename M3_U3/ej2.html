@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const dimen = parseInt(prompt(`Ingrese cuantos valores va a ingresar:`,''));
+        let numeros = [0];
+
+        for(let j = 0; j < dimen; j++){
+            numeros[j] = parseInt(prompt(`Ingrese número`));
+        }
+
+        let max = numeros[0];
+
+        for (let i = 1; i < numeros.length; i++) {
+            if (max < numeros[i]) {
+                max = numeros[i];
+            }
+        }
+        document.write(`El máximo es:<br/> ${max} `);
+    </script>
+</body>
+
+</html>

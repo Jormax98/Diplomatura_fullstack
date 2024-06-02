@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let medio = 'no se encontro medio de transporte posible';
+        const dist = prompt('Ingrese distancia:', '');
+
+        if (dist >= 0 & dist < 1000) {
+            medio = 'a pie';
+        }
+        else if (dist >= 1000 & dist < 10000) {
+            medio = 'en bicicleta';
+        }
+        else if (dist >= 10000 & dist < 30000) {
+            medio = 'en colectivo';
+        }
+        else if (dist >= 30000 & dist < 100000) {
+            medio = 'en auto';
+        }
+        else if (dist >= 100000) {
+            medio = 'en avion';
+        }
+
+        document.write(`Su medio de transporte es: ${medio}`);
+    </script>
+</body>
+
+</html>
