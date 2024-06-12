@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ej2.css">
+</head>
+
+<body>
+    <h2>Contacto rápido</h2>
+    <form class="formulario" name="form">
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre">
+        </p>
+        <p>
+            <label for="email">e-mail</label>
+            <input type="email" name="mail">
+        </p>
+        <p>
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="tel">
+        </p>
+        <p>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mens"></textarea>
+        </p>
+        <p class="acciones"><input type="button" onclick="contar()" value="Enviar"></p>
+    </form>
+
+    <script>
+        function contar() {
+            alert(document.form.nombre.value.length);
+            alert(document.form.mail.value.length);
+            alert(document.form.tel.value.length);
+            alert(document.form.mens.value.length);
+        }
+    </script>
+</body>
+
+</html>
