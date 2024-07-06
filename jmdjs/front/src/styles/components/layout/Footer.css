@@ -1,0 +1,26 @@
+footer{
+    background-color: lightgray;
+    padding-bottom: 2px;
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+.contactanos{
+    padding-top: 2px;
+    background-color: black;
+    color: white;
+    display: flow-root;
+}
+
+.contactanos p{
+    display: inline-flex;
+    padding: 0px 20px 20px 20px;
+    margin: 0;
+}
+
+.contactanos h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
