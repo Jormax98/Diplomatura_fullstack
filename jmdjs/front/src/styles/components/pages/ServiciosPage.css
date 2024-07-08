@@ -1,0 +1,20 @@
+.servicios{
+    display: flex;
+    align-items: center;
+}
+
+.servicios img{
+    margin-right: 25px;
+}
+
+#lista_servicios ul li{
+    list-style: none;
+}
+
+#lista_servicios ul li h4{
+    margin: 0;    
+}
+
+#img_servicios{
+    border-radius: 20px;
+}
