@@ -38,15 +38,15 @@ app.get('/', function (req, res) {
   res.render('index', {
     title: 'Sesiones en Express.js',
     conocido: conocido,
-    nombre: req.session.nombre
+    nombre: req.session.nombre,
+    edad: req.session.edad
   });
 });
 
 app.post('/ingresar', function (req, res) {
-  //var nombre = req.body.nombre;
-  //console.log(nombre)
-  if (req.body.nombre) {
-    req.session.nombre = req.body.nombre
+  if (req.body.nombre && req.body.edad) {
+    req.session.nombre = req.body.nombre;
+    req.session.edad =req.body.edad;
   }
   res.redirect('/');
 });
