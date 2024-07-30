@@ -4,11 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var session = require('express-session');
+require('dotenv').config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
@@ -22,38 +21,47 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({
-  secret: 'ZJ4n5Xh6n9PC7m',
-  resave: false,
-  saveUninitialized: true
-}));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/admin/login', loginRouter); 
 
-// app.get('/', function (req, res) {
-//   var conocido = Boolean(req.session.nombre);
+var pool = require('./models/bd');
 
-//   res.render('index', {
-//     title: 'Sesiones en Express.js',
-//     conocido: conocido,
-//     nombre: req.session.nombre,
-//     edad: req.session.edad
-//   });
+//select
+pool.query('select * from empleados order by id_emp ASC').then(function (resultados) {
+  console.log(resultados)
+});
+
+//insert
+// var obj = {
+//   nombre: 'Juan',
+//   apellido: 'Lopez',
+//   trabajo: 'Docente',
+//   edad: 38,
+//   salario: 1500000,
+//   mail: 'juanlopez@gmail.com'
+// }
+
+// pool.query('insert into empleados set ?', [obj]).then(function (resultados)
+// {
+//   console.log(resultados)
 // });
 
-// app.post('/ingresar', function (req, res) {
-//   if (req.body.nombre && req.body.edad) {
-//     req.session.nombre = req.body.nombre;
-//     req.session.edad =req.body.edad;
-//   }
-//   res.redirect('/');
+//update
+// var id = 20;
+// var obj = {
+//   nombre: 'Pablo',
+//   apellido: 'Gomez'
+// }
+
+// pool.query('update empleados set ? where id_emp = ?', [obj, id]).then(function(resultados){
+//   console.log(resultados);
 // });
 
-// app.get('/salir', function(req,res){
-//   req.session.destroy();
-//   res.redirect('/');
+//delete
+// var id = 20;
+
+// pool.query('delete from empleados where id_emp = ?', [id]).then(function(resultados){
+//   console.log(resultados);
 // });
 
 // catch 404 and forward to error handler
