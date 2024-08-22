@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileUpload = require('express-fileupload');
 
 require('dotenv').config();
 var session = require('express-session');
@@ -12,7 +13,7 @@ var session = require('express-session');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
-var adminRouter = require('./routes/admin/novedades');
+var adminRouter = require('./routes/admin/trabajos');
 
 var app = express();
 
@@ -46,6 +47,11 @@ secured = async (req, res, next) => {
   }
 }
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
 app.use(session({
   secret: 'ZJ4n5Xh6n9PC7m',
   resave: false,
@@ -55,7 +61,7 @@ app.use(session({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/trabajos', secured, adminRouter);
 
 // app.get('/', function (req, res) {
 //   var conocido = Boolean(req.session.nombre);

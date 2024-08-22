@@ -1,0 +1,25 @@
+<div class="container" style="margin:100px auto">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h4>Agregar trabajo</h4>
+            <form action="/admin/trabajos/agregar" method="post" enctype="multipart/form-data">
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Empresa" name="empresa">
+                </div>
+                <div class="mb-3 row">
+                    <input type="text" class="form-control" placeholder="Trabajo" name="trabajo">
+                </div>
+                <div class="mb-3 row">
+                    <label>Imagen: <input type="file" class="form-group" name="imagen" id="imagen"></label>
+                </div>
+                <div class="mb-3 row">
+                    <textarea name="cuerpo" class="form-control" placeholder="Cuerpo"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+            {{#if error}}
+            <h4>{{message}}</h4>
+            {{/if}}
+        </div>
+    </div>
+</div>
