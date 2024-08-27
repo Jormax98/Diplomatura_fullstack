@@ -1,0 +1,8 @@
+.trabajos img{
+    display: flex;
+}
+
+.trabajos div{
+    display: flex;
+    align-items: flex-start;
+}
