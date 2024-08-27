@@ -1,8 +1,8 @@
-.trabajos img{
+.flexible{
     display: flex;
+    align-items: center;
 }
 
-.trabajos div{
-    display: flex;
-    align-items: flex-start;
+.flexible img{
+    margin-right: 25px;
 }

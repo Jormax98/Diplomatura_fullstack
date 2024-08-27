@@ -53,21 +53,21 @@ const EmpresaPage = (props) => {
             </p>
             <div id="integrantes_empresa">
                 <div class="integrantes">
-                    <img src="images/David.jpeg" alt=""></img>
+                    <img class="img_integrantes" src="images/Dardo.jpg" alt=""></img>
                     <h4>Joel</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque impedit, sunt, recusandae
                         veritatis soluta eveniet labore amet eius ad fugiat placeat iusto doloribus cupiditate nihil
                         distinctio nam eligendi? Hic.</p>
                 </div>
                 <div class="integrantes">
-                    <img src="images/Maxi.jpg" alt=""></img>
+                    <img class="img_integrantes" src="images/Maxi.jpg" alt=""></img>
                     <h4>Maximiliano</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius architecto reprehenderit quo ullam,
                         laudantium illum eos assumenda amet et mollitia esse praesentium incidunt eligendi ducimus nisi
                         itaque sit, consectetur atque!</p>
                 </div>
                 <div class="integrantes">
-                    <img src="images/David.jpeg" alt=""></img>
+                    <img class="img_integrantes" src="images/David.jpeg" alt=""></img>
                     <h4>David</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum consequuntur quia veniam ratione
                         velit. Possimus laborum aut, dolores impedit illo quaerat quia neque ratione magni rem id? Eius,

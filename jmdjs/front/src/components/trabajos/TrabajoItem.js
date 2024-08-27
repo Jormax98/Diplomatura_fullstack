@@ -8,8 +8,10 @@ const TrabajoItem = (props) => {
         <div className="trabajos">
             <h1>{company}</h1>
             <h2>{work}</h2>
+            <div className='flexible'>
             <img src={image} />
             <div dangerouslySetInnerHTML={{ __html: body }} />
+            </div>
             <hr />
         </div>
     );
